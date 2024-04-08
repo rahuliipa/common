@@ -1,0 +1,33 @@
+{
+    "name": "geocode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "tsc",
+      "start": "node build",
+      "dev": "nodemon -e ts,js -x 'NODE_ENV=development LOG_LEVEL=debug ts-node src'",
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "lint": "prettier --write src/**/*",
+      "coverage": "NODE_ENV=test nyc npm run test"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Insurun/geocode.git"
+    },
+    "author": "Vito <vito@vitosamson.com>",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Insurun/geocode/issues"
+    },
+    "homepage": "https://github.com/Insurun/geocode#readme",
+   
+    "dependencies": {     
+        "insurun-js": "^1.2.1"
+      },
+    "engines": {
+      "node": ">= 12"
+    }
+  }
+  
